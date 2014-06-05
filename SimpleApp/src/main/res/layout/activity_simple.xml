@@ -23,14 +23,16 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btnAddItem"
-        android:hint="@android:string/untitled" />
+        android:hint="New Item" />
+    <!-- android:hint ~~ The faded text in entry fields -->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@android:string/untitled"
+        android:text="Add"
         android:id="@+id/btnAddItem"
         android:layout_alignBottom="@+id/etNewItem"
+        android:onClick="addTodoItem"
         android:layout_alignEnd="@+id/lvItems" />
-
+    <!-- android:onClick ~~ The callback function -->
 </RelativeLayout>
